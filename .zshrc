@@ -26,6 +26,7 @@ alias s="nr start"
 alias t="nr test"
 alias u="nu"
 alias t="nr test"
+alias i="ni"
 alias tw="nr test --watch"
 
 # Git
