@@ -1,46 +1,45 @@
-fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+eval "$(starship init zsh)"
+
 export ZSH="$HOME/.oh-my-zsh"
-
-ZSH_THEME="minimal"
-
-plugins=(
-	git
-	zsh-syntax-highlighting
-	zsh-autosuggestions
-	)
 
 source $ZSH/oh-my-zsh.sh
 
-# cd to projects directory
-alias cdp="cd projects && ls"
+plugins=(
+    git
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    zsh-z
+)
 
-# vsc
-alias c="code"
-# vsc end
-
-# Node Package Manager
 alias b="nr build"
-alias d="nr dev"
-alias s="nr start"
-alias t="nr test"
-alias u="nu"
-alias t="nr test"
 alias i="ni"
-alias tw="nr test --watch"
+alias s="nr start"
+alias d="nr dev"
+alias t="nr test"
+alias u="nu --latest"
+alias lint="nr lint"
+alias lintf="nr lintf"
+
+function p() {
+  cd ~/dev/projects/$1
+}
+
+function f() {
+  cd ~/dev/forks/$1
+}
+
+function dir() {
+  mkdir $1 && cd &1
+}
+
+# fnm
+export PATH="/home/corn/.local/share/fnm:$PATH"
+eval "`fnm env`"
 
 # pnpm
 export PNPM_HOME="/home/corn/.local/share/pnpm"
-export PATH="$PNPM_HOME:$PATH"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
 # pnpm end
-
-# wsl2 proxy
-export hostip=$(cat /etc/resolv.conf | grep -oP '(?<=nameserver\ ).*')
-export all_proxy=http://$hostip:7890
-# wsl2 proxy end
-
-# npm proxy
-npm config set proxy http://$hostip:7890
-# npm proxy end
-
-# Enable starship
-eval "$(starship init zsh)"
