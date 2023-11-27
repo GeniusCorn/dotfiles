@@ -9,8 +9,17 @@ alias u="nu"
 alias lint="nr lint"
 alias lintf="nr lint --fix"
 
-alias forks="cd /home/corn/dev/forks"
-alias pros="cd /home/corn/dev/projects"
+function pros
+  cd /home/corn/dev/projects
+
+  ls -la
+end
+
+function forks
+  cd /home/corn/dev/forks
+
+  ls -la
+end
 
 # pnpm
 set -gx PNPM_HOME "/home/corn/.local/share/pnpm"
