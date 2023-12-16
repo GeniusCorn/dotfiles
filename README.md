@@ -2,5 +2,4 @@
 
 My dotfiles.
 
-- [.zshrc](./.zshrc)
-- [.initvim](./init.vim)
+- [config.fish](./config.fish)
