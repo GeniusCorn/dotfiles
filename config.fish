@@ -11,6 +11,7 @@ alias ...="cd ../.. && ls -la"
 alias 。。。="cd ../.. && ls -la"
 alias ....="cd ../../.. && ls -la"
 alias 。。。。="cd ../../.. && ls -la"
+alias bat=batcat
 
 # node
 alias b="nr build"
