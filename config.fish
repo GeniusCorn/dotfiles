@@ -5,17 +5,26 @@ starship init fish | source
 set fish_greeting
 
 # shortcuts
-alias ..="cd .. && ls -la"
-alias 。。="cd .. && ls -la"
-alias ...="cd ../.. && ls -la"
-alias 。。。="cd ../.. && ls -la"
-alias ....="cd ../../.. && ls -la"
-alias 。。。。="cd ../../.. && ls -la"
+alias ..="cd .. && ll"
+alias 。。="cd .. && ll"
+alias ...="cd ../.. && ll"
+alias 。。。="cd ../.. && ll"
+alias ....="cd ../../.. && ll"
+alias 。。。。="cd ../../.. && ll"
+alias bat=batcat
+alias c=clear
+
+# eza aliases
+alias ls='eza --group-directories-first --icons'
+alias la='eza -a --group-directories-first --icons'
+alias l='eza -l --group-directories-first --icons'
+alias ll='eza -la --group-directories-first --icons'
 
 # node
 alias b="nr build"
 alias d="nr dev"
 alias i="ni"
+alias io="ni --prefer-offline"
 alias p="nr preview"
 alias s="nr start"
 alias t="nr test"
@@ -87,9 +96,6 @@ function clonef
   code .
 end
 
-# pnpm
-set -gx PNPM_HOME "/home/corn/.local/share/pnpm"
-if not string match -q -- $PNPM_HOME $PATH
-  set -gx PATH "$PNPM_HOME" $PATH
-end
-# pnpm end
+set -gx BAT_THEME "Catppuccin Mocha"
+
+zoxide init fish | source
