@@ -35,6 +35,10 @@ alias ul="nu --latest"
 alias lint="nr lint"
 alias lintf="nr lint --fix"
 
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
+
 # git
 alias ga="git add"
 alias gaa="git add -A"
