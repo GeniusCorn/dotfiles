@@ -1,0 +1,4 @@
+0000000000000000000000000000000000000000 c52b34e54247a552eca3301267ff67bfc4bfe420 GeniusCorn <hi@nicecorn.com> 1754581537 +0800	commit (initial): chore: init
+c52b34e54247a552eca3301267ff67bfc4bfe420 52b70409e370a20821e012d2ef84b5fc075c4626 GeniusCorn <hi@nicecorn.com> 1754582845 +0800	commit: chore: update plugins
+52b70409e370a20821e012d2ef84b5fc075c4626 9853f60eeeed4af42c93022715f340e31c055389 GeniusCorn <hi@nicecorn.com> 1754649301 +0800	pull --rebase: Fast-forward
+9853f60eeeed4af42c93022715f340e31c055389 1e2db9762e6aa4d4a785dd55d266581d161dfd6f GeniusCorn <hi@nicecorn.com> 1754709847 +0800	commit: chore: update vscode
