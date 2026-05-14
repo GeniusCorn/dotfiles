@@ -11,7 +11,7 @@ mise activate fish | source
 zoxide init fish | source
 
 # fzf
-fzf --fish | source
+# fzf --fish | source
 
 # shortcuts
 alias ..="cd .. && ll"
