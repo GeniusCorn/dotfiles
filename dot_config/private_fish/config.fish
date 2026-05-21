@@ -1,4 +1,4 @@
-# startship init
+# startship
 starship init fish | source
 
 # disable fish greeting
@@ -55,6 +55,7 @@ alias gb="git branch"
 alias gbd="git branch -d"
 alias gcl="git clone"
 alias gco="git checkout"
+alias gcob="git checkout -b"
 alias gc="git commit"
 alias gca="git commit -a"
 alias gcm="git commit -m"
@@ -65,6 +66,10 @@ alias gpf="git push --force"
 alias gpl="git pull --rebase"
 alias gs="git status"
 alias gst="git stash"
+
+alias grb='git rebase'
+alias grbom='git rebase origin/main'
+alias grbc='git rebase --continue'
 
 alias main="git checkout main"
 
@@ -111,3 +116,6 @@ end
 
 set -gx BAT_THEME "Catppuccin Mocha"
 
+set -gx NI_DEFAULT_AGENT pnpm
+set -gx NI_GLOBAL_AGENT pnpm
+set -gx NI_CATALOG true
