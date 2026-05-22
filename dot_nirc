@@ -1,0 +1,16 @@
+; ~/.nirc
+
+; fallback when no lock found
+defaultAgent=pnpm # default "prompt"
+
+; for global installs
+globalAgent=pnpm
+
+; use node --run instead of package manager run command (requires Node.js 22+)
+runAgent=node
+
+; prefix commands with sfw
+useSfw=true
+
+; use catalog mode when catalogs are detected (default true)
+catalog=true
