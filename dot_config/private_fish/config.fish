@@ -114,6 +114,10 @@ function clonef
   code .
 end
 
+function update-a
+  sudo apt update && sudo apt upgrade && sudo apt dis-upgrade
+end
+
 set -gx BAT_THEME "Catppuccin Mocha"
 
 set -gx NI_DEFAULT_AGENT pnpm
