@@ -114,8 +114,8 @@ function clonef
   code .
 end
 
-function update-a
-  sudo apt update && sudo apt upgrade && sudo apt dis-upgrade
+function update-all
+  sudo apt update && sudo apt upgrade && sudo apt dist-upgrade
 end
 
 set -gx BAT_THEME "Catppuccin Mocha"
