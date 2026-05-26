@@ -7,7 +7,7 @@ defaultAgent=pnpm # default "prompt"
 globalAgent=pnpm
 
 ; use node --run instead of package manager run command (requires Node.js 22+)
-runAgent=node
+; runAgent=node
 
 ; prefix commands with sfw
 useSfw=true
