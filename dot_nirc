@@ -10,7 +10,7 @@ globalAgent=pnpm
 ; runAgent=node
 
 ; prefix commands with sfw
-useSfw=true
+; useSfw=true
 
 ; use catalog mode when catalogs are detected (default true)
 catalog=true
