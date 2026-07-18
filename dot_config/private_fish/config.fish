@@ -7,9 +7,6 @@ set fish_greeting
 # mise
 mise activate fish | source
 
-# zoxide
-zoxide init fish | source
-
 # fzf
 # fzf --fish | source
 
@@ -73,6 +70,9 @@ alias grbc='git rebase --continue'
 
 alias main="git checkout main"
 
+# fd alias
+alias fd="fdfind"
+
 function gtr
   cd (git rev-parse --show-toplevel)
 end
@@ -123,3 +123,6 @@ set -gx BAT_THEME "Catppuccin Mocha"
 set -gx NI_DEFAULT_AGENT pnpm
 set -gx NI_GLOBAL_AGENT pnpm
 set -gx NI_CATALOG true
+
+# zoxide
+zoxide init fish | source
