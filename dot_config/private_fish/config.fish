@@ -125,4 +125,9 @@ set -gx NI_GLOBAL_AGENT pnpm
 set -gx NI_CATALOG true
 
 # zoxide
+set -gx PATH /home/corn/.local/bin $PATH
 zoxide init fish | source
+
+if status is-interactive
+    atuin init fish | source
+end
