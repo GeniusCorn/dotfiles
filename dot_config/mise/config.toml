@@ -1,19 +1,13 @@
 [tools]
 chezmoi = "2.70.3"
-npm = "12.0.1"
-pnpm = "latest"
+npm = "12.0.2"
+pnpm = "11.20.0"
 python = "latest"
 uv = "latest"
-"github:can1357/oh-my-pi" = "latest"
-
-[tools.node]
-version = "24.18.0"
-postinstall = """
-npm install -g --ignore-scripts \
-  @earendil-works/pi-coding-agent \
-  @antfu/ni \
-  @github/copilot
-"""
+usage = "latest"
+node= { version = "24.19.0", postinstall = """
+npm install -g --ignore-scripts @earendil-works/pi-coding-agent @antfu/ni @github/copilot
+""" }
 
 [settings]
 idiomatic_version_file_enable_tools = ["node"]
