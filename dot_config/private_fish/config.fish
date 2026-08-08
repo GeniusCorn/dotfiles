@@ -74,7 +74,7 @@ alias main="git checkout main"
 alias fd="fdfind"
 
 # chezomi
-alias czpush="chezmoi git -- add -A && chezmoi git -- commit -m update && chezmoi git --push"
+alias czpush="chezmoi git -- add -A && chezmoi git -- commit -m update && chezmoi git -- push"
 
 function gtr
   cd (git rev-parse --show-toplevel)
