@@ -1,7 +1,7 @@
 [tools]
-chezmoi = "2.70.3"
-npm = "12.0.2"
-pnpm = "11.20.0"
+chezmoi = "latest"
+npm = "latest"
+pnpm = "latest"
 python = "latest"
 uv = "latest"
 usage = "latest"
