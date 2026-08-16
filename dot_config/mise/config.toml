@@ -19,3 +19,6 @@ zoxide = "latest"
 [settings]
 idiomatic_version_file_enable_tools = ["pnpm", "node"]
 minimum_release_age = "0"
+
+[settings.url_replacements]
+"regex:^https://github\\.com" = "https://gh-proxy.org/https://github.com"
