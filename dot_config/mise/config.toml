@@ -14,6 +14,7 @@ uv = "latest"
 
 usage = "latest"
 atuin = "latest"
+zoxide = "latest"
 
 [settings]
 idiomatic_version_file_enable_tools = ["pnpm", "node"]
