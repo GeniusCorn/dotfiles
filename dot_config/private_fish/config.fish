@@ -30,13 +30,15 @@ alias ll='eza -la --group-directories-first --icons'
 alias b="nr build"
 alias d="nr dev"
 alias i="ni"
+alias inf="ni -f"
+alias rei="pnpm clean --lockfile && ni"
 alias io="ni --prefer-offline"
 alias p="nr preview"
 alias s="nr start"
 alias t="nr test"
 alias tw="nr test --watch"
-alias u="nu"
-alias ul="nu --latest"
+alias u="nlx taze"
+alias ul="nlx taze --latest"
 
 alias lint="nr lint"
 alias lintf="nr lint --fix"
@@ -75,6 +77,24 @@ alias fd="fdfind"
 
 # chezomi
 alias czpush="chezmoi git -- add -A && chezmoi git -- commit -m update && chezmoi git -- push"
+
+# bat
+set -gx BAT_THEME "Catppuccin Mocha"
+
+# ni
+set -gx NI_DEFAULT_AGENT pnpm
+set -gx NI_GLOBAL_AGENT pnpm
+set -gx NI_CATALOG true
+
+# zoxide
+set -gx PATH /home/corn/.local/bin $PATH
+zoxide init fish | source
+
+# autin
+if status is-interactive
+    atuin init fish | source
+end
+
 
 function gtr
   cd (git rev-parse --show-toplevel)
@@ -119,18 +139,4 @@ end
 
 function update-all
   sudo apt update && sudo apt upgrade && sudo apt dist-upgrade
-end
-
-set -gx BAT_THEME "Catppuccin Mocha"
-
-set -gx NI_DEFAULT_AGENT pnpm
-set -gx NI_GLOBAL_AGENT pnpm
-set -gx NI_CATALOG true
-
-# zoxide
-set -gx PATH /home/corn/.local/bin $PATH
-zoxide init fish | source
-
-if status is-interactive
-    atuin init fish | source
 end
