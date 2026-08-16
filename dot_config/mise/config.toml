@@ -1,13 +1,19 @@
 [tools]
 chezmoi = "latest"
+
+# node
+node= "latest"
 npm = "latest"
 pnpm = "latest"
+"npm:@antfu/ni" = "latest"
+"npm:taze" = "latest"
+
+# python
 python = "latest"
 uv = "latest"
+
 usage = "latest"
-node= { version = "24.19.0", postinstall = """
-npm install -g --ignore-scripts @earendil-works/pi-coding-agent @antfu/ni @github/copilot
-""" }
 
 [settings]
-idiomatic_version_file_enable_tools = ["node"]
+idiomatic_version_file_enable_tools = ["pnpm", "node"]
+minimum_release_age = "0"
