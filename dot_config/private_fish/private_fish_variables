@@ -2,4 +2,3 @@
 # VERSION: 3.0
 SETUVAR __fish_initialized:4300
 SETUVAR fish_color_autosuggestion:949494
-SETUVAR fish_user_paths:/home/corn/bin
