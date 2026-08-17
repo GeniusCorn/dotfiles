@@ -138,5 +138,8 @@ function clonef
 end
 
 function update-all
-  sudo apt update && sudo apt upgrade && sudo apt dist-upgrade
+  sudo apt update -y
+  sudo apt upgrade -y
+  sudo apt dist-upgrade -y
+  mise upgrade --bump
 end
