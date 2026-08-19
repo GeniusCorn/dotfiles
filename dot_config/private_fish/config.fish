@@ -1,14 +1,14 @@
+# mise
+mise activate fish | source
+
 # startship
 starship init fish | source
 
 # disable fish greeting
 set fish_greeting
 
-# mise
-mise activate fish | source
-
 # fzf
-# fzf --fish | source
+fzf --fish | source
 
 # shortcuts
 alias ..="cd .. && ll"
