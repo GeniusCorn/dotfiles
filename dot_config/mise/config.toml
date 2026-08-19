@@ -1,0 +1,28 @@
+[tools]
+# node
+node = "latest"
+npm = "latest"
+"npm:@antfu/ni" = "latest"
+"npm:taze" = "latest"
+pnpm = "latest"
+
+# tools
+atuin = "latest"
+bat = "latest"
+btop = "latest"
+chezmoi = "latest"
+eza = "latest"
+fastfetch = "latest"
+fd = "latest"
+fzf = "latest"
+gh = "latest"
+python = "latest"
+starship = "latest"
+usage = "latest"
+uv = "latest"
+xh = "latest"
+zoxide = "latest"
+
+[settings]
+idiomatic_version_file_enable_tools = ["pnpm", "node"]
+minimum_release_age = "0"
