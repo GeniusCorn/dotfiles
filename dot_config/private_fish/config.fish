@@ -91,9 +91,9 @@ set -gx PATH /home/corn/.local/bin $PATH
 zoxide init fish | source
 
 # autin
-if status is-interactive
-    atuin init fish | source
-end
+# if status is-interactive
+#     atuin init fish | source
+# end
 
 
 function gtr
