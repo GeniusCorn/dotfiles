@@ -7,6 +7,8 @@ npm = "latest"
 pnpm = "latest"
 bun = "latest"
 
+"npm:@github/copilot" = "latest"
+
 # tools
 atuin = "latest"
 bat = "latest"
