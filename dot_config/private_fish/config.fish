@@ -143,4 +143,5 @@ function update-all
   sudo apt upgrade -y
   sudo apt dist-upgrade -y
   mise upgrade --bump
+  pi update --all
 end
