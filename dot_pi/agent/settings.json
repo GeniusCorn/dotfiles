@@ -24,7 +24,8 @@
         "+skills/ponytail-gain/SKILL.md"
       ],
       "source": "git:github.com/DietrichGebert/ponytail"
-    }
+    },
+    "https://github.com/davebcn87/pi-autoresearch"
   ],
   "quietStartup": false,
   "terminal": {
