@@ -1,0 +1,36 @@
+{
+  "collapseChangelog": true,
+  "defaultModel": "mai-code-1.1-flash",
+  "defaultProjectTrust": "always",
+  "defaultProvider": "github-copilot",
+  "defaultThinkingLevel": "max",
+  "defaultTools": [
+    "+codemode"
+  ],
+  "extensions": [
+    "+builtin:mcp",
+    "-extensions/atuin.ts"
+  ],
+  "hideThinkingBlock": true,
+  "lastChangelogVersion": "1.0.0",
+  "packages": [
+    "npm:pi-language-tutor",
+    "npm:pi-web-access",
+    "npm:@upstash/context7-pi",
+    "npm:context-mode",
+    "npm:pi-zentui",
+    {
+      "skills": [
+        "+skills/ponytail-gain/SKILL.md"
+      ],
+      "source": "git:github.com/DietrichGebert/ponytail"
+    }
+  ],
+  "quietStartup": false,
+  "terminal": {
+    "clearOnShrink": true,
+    "showTerminalProgress": true
+  },
+  "theme": "system/system",
+  "treeFilterMode": "default"
+}
