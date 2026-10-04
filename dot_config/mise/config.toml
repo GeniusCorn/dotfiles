@@ -8,7 +8,6 @@ pnpm = "latest"
 bun = "latest"
 
 "npm:@github/copilot" = "latest"
-"npm:@earendil-works/pi-coding-agent" = "latest"
 
 # tools
 atuin = "latest"
