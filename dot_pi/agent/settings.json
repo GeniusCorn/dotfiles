@@ -12,7 +12,7 @@
     "-extensions/atuin.ts"
   ],
   "hideThinkingBlock": true,
-  "lastChangelogVersion": "1.0.0",
+  "lastChangelogVersion": "1.0.1",
   "packages": [
     "npm:pi-language-tutor",
     "npm:pi-web-access",
