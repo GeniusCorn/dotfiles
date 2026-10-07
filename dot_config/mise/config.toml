@@ -30,3 +30,4 @@ zoxide = "latest"
 [settings]
 idiomatic_version_file_enable_tools = ["pnpm", "node"]
 minimum_release_age = "0"
+fetch_remote_versions_timeout = "30s"
