@@ -10,7 +10,6 @@ bun = "latest"
 "npm:@github/copilot" = "latest"
 
 # tools
-atuin = "latest"
 bat = "latest"
 btop = "latest"
 chezmoi = "latest"
