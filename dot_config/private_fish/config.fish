@@ -90,11 +90,6 @@ set -gx NI_CATALOG true
 set -gx PATH /home/corn/.local/bin $PATH
 zoxide init fish | source
 
-# autin
-# if status is-interactive
-#     atuin init fish | source
-# end
-
 
 function gtr
   cd (git rev-parse --show-toplevel)
