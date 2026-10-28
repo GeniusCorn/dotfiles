@@ -78,6 +78,11 @@ alias fd="fdfind"
 # chezomi
 alias czpush="chezmoi git -- add -A && chezmoi git -- commit -m update && chezmoi git -- push"
 
+# auto attach tmux (skip inside tmux / IDE terminals); must stay after `mise activate`
+if status is-interactive; and not set -q TMUX; and not set -q VSCODE_INJECTION
+    tmux new-session -A -s main
+end
+
 # bat
 set -gx BAT_THEME "Catppuccin Mocha"
 
