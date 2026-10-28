@@ -78,8 +78,16 @@ alias fd="fdfind"
 # chezomi
 alias czpush="chezmoi git -- add -A && chezmoi git -- commit -m update && chezmoi git -- push"
 
-# auto attach tmux (skip inside tmux / IDE terminals); must stay after `mise activate`
-if status is-interactive; and not set -q TMUX; and not set -q VSCODE_INJECTION
+# auto attach tmux
+# skip when: non-interactive, already inside tmux, IDE terminals,
+# or already multiplexed by an outer tmux/screen (e.g. ssh from a local tmux pane,
+# which does NOT forward $TMUX but DOES forward $TERM=screen-256color/tmux-256color)
+# must stay after `mise activate`
+if status is-interactive
+    and not set -q TMUX
+    and not set -q VSCODE_INJECTION
+    and not string match -qr '^(screen|tmux)' -- "$TERM"
+    and command -q tmux
     tmux new-session -A -s main
 end
 
