@@ -148,4 +148,5 @@ function update-all
   sudo apt dist-upgrade -y
   mise upgrade --bump
   pi update --extensions
+  gh auth setup-git
 end
