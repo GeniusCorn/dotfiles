@@ -142,12 +142,12 @@ function clonef
 end
 
 function update-all
-  chezmoi add $HOME/.pi/agent/settings.json
   chezmoi update
   sudo apt update -y
   sudo apt upgrade -y
   sudo apt dist-upgrade -y
   mise upgrade --bump
   pi update --extensions
+  chezmoi add $HOME/.pi/agent/settings.json
   gh auth setup-git
 end
