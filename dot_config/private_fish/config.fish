@@ -142,6 +142,7 @@ function clonef
 end
 
 function update-all
+  chezmoi add $HOME/.pi/agent/settings.json
   chezmoi update
   sudo apt update -y
   sudo apt upgrade -y
