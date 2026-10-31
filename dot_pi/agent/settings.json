@@ -12,7 +12,6 @@
   ],
   "hideThinkingBlock": false,
   "packages": [
-    "npm:pi-language-tutor",
     "npm:pi-web-access",
     "npm:@upstash/context7-pi",
     "npm:context-mode",
@@ -31,5 +30,6 @@
     "showTerminalProgress": true
   },
   "theme": "system/system",
-  "treeFilterMode": "default"
+  "treeFilterMode": "default",
+  "lastChangelogVersion": "1.4.0"
 }
