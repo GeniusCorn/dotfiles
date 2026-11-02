@@ -31,5 +31,6 @@
   },
   "theme": "system/system",
   "treeFilterMode": "default",
-  "lastChangelogVersion": "1.4.0"
+  "lastChangelogVersion": "1.4.0",
+  "pendantBackgroundTerminals": true
 }
