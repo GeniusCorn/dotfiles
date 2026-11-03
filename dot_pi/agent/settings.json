@@ -1,7 +1,7 @@
 {
   "$schema": "https://pi.dev/schemas/settings.schema.json",
   "collapseChangelog": true,
-  "defaultModel": "group/auto-deepseek-v4-1-flash",
+  "defaultModel": "auto/deepseek-v4.1-flash",
   "defaultProjectTrust": "always",
   "defaultProvider": "magpie",
   "defaultTools": [
