@@ -31,6 +31,10 @@
   },
   "theme": "system/system",
   "treeFilterMode": "default",
-  "lastChangelogVersion": "1.4.0",
-  "pendantBackgroundTerminals": true
+  "lastChangelogVersion": "1.5.0",
+  "pendantBackgroundTerminals": true,
+  "extensionChangelogVersions": {
+    "{\"source\":\"npm:pi-web-access\",\"scope\":\"user\"}": "0.46.0",
+    "{\"source\":\"https://github.com/davebcn87/pi-autoresearch\",\"scope\":\"user\"}": "1.9.0"
+  }
 }
