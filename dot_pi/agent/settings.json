@@ -22,7 +22,8 @@
       ],
       "source": "git:github.com/DietrichGebert/ponytail"
     },
-    "https://github.com/davebcn87/pi-autoresearch"
+    "https://github.com/davebcn87/pi-autoresearch",
+    "npm:pi-agent-loop"
   ],
   "quietStartup": true,
   "terminal": {
