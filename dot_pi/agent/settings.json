@@ -13,7 +13,6 @@
   "hideThinkingBlock": false,
   "packages": [
     "npm:pi-web-access",
-    "npm:@upstash/context7-pi",
     "npm:context-mode",
     "npm:pi-zentui",
     {
@@ -22,8 +21,7 @@
       ],
       "source": "git:github.com/DietrichGebert/ponytail"
     },
-    "https://github.com/davebcn87/pi-autoresearch",
-    "npm:pi-agent-loop"
+    "https://github.com/davebcn87/pi-autoresearch"
   ],
   "quietStartup": true,
   "terminal": {
